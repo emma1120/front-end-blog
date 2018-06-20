@@ -1,6 +1,6 @@
 # vue-demo
 
-> A Vue.js project
+> A Vue.js project   vue学习
 
 ## Build Setup
 
@@ -27,4 +27,23 @@ npm run e2e
 npm test
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+#### 关于vue-cli创建  
+按照最新官方文档  命令创建  
+```
+npm install -g @vue/cli
+
+//   可以选择
+vue create my-project
+
+//也可以 按照vue-cli2.X 脚手架创建 webpack 的项目
+vue init webpack my-project
+```
+
+#### 关于git 绑定
+一 、先将开发电脑 跟 git  账号 SSH秘钥 关联
+二、git 创建空项目
+三、本地创建 vue 项目   然后  执行  git init     git add *    git commit -m ""    git push origin master -f  强行提交
+具体 执行git 命令时回出现 冲突等问题 导致提交不成功 具体git 命令以及冲突解决  可参见下面链接
+http://www.runoob.com/w3cnote/git-guide.html
+https://stackoverflow.com/questions/28429819/rejected-master-master-fetch-first
+
