@@ -6,6 +6,7 @@ import blogPage from '@/view/blog'
 import mePage from '@/view/me'
 
 Vue.use(Router)
+
 export default new Router({
   routes: [
     {
