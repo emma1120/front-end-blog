@@ -1,24 +1,23 @@
 <template>
     <div>
-        <div class="login">
-            login
-        </div>
+     2
     </div>
 </template>
 
 <script>
 export default {
-    name: 'loginPage',
+    name: 'homePage',
     data () {
         return {
             
         }
-    }
+    },
+
 }
 
-</script>
+</script >
 
-<style >
+<style  scoped>
 
 
 </style>

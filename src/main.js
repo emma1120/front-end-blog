@@ -10,9 +10,12 @@ import '@/assets/css/main.css'
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
-new Vue({
+const app = new Vue({
   el: '#app',
   router,
   components: { App },
   template: '<App/>'
 })
+
+console.log(app.$data)
+console.log(app.$slots)
