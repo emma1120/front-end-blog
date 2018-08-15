@@ -46,6 +46,7 @@ export default {
       align-items:center;
       text-decoration:none;
       color:#333;
+      
        &.active{
          color:#f20717;
          font-weight:bold;
