@@ -2,6 +2,7 @@
   <header>
    <div class="header">
         <span>Emma's blog</span>
+        <i class="icon iconfont icon-customerservice"></i>
    </div>
   </header>
 </template>

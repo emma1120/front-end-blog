@@ -2,15 +2,15 @@
    <footer>
        <div class="footer">
                <router-link to="/home" class="footer-item" >
-                  <i class="footer-icon home"></i>
-                  <span>Home</span>
+                  <div><i class="footer-icon icon iconfont icon-home"></i></div>
+                  <div><span>Home</span></div>
                </router-link>
                <router-link to="/blog"  class="footer-item">
-                  <i class="footer-icon tc"></i>
+                  <i class="footer-icon icon iconfont icon-HTML-fill"></i>
                   <span>博客</span>
                </router-link>
                <router-link to="/me"  class="footer-item" > 
-                    <i class="footer-icon me"></i>
+                    <i class="footer-icon icon iconfont icon-user"></i>
                     <span>me</span>
                </router-link>             
        </div>
@@ -32,12 +32,14 @@ export default {
 <style scoped lang='stylus'>
   .footer{
     position:fixed;
-    z-index:1;
+    z-index:2;
     bottom:0;
     right:0;
     left:0;
     display :flex;
     height:58px;
+    border-top:1px solid #ccc;
+    background :#fff;
 
     .footer-item{
       flex:1;
@@ -46,6 +48,7 @@ export default {
       align-items:center;
       text-decoration:none;
       color:#333;
+      flex-direction:column;
 
        &.active{
          color:#f20717;
@@ -55,6 +58,7 @@ export default {
       .footer-icon{
         width:20px;
         height:20px;
+        display:block;
         
       }
     }

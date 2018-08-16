@@ -1,6 +1,6 @@
 # vue-demo
 
-> A Vue.js project   vue学习
+> A Vue.js project   vue学习  移动端博客页面
 
 ## Build Setup
 
@@ -46,6 +46,11 @@ vue init webpack my-project
 具体 执行git 命令时回出现 冲突等问题 导致提交不成功 具体git 命令以及冲突解决  可参见下面链接
 http://www.runoob.com/w3cnote/git-guide.html
 https://stackoverflow.com/questions/28429819/rejected-master-master-fetch-first
+
+git add *
+git commit -m ''
+git pull origin master 
+git push origin master
 
 #### 》vue的API学习
 
