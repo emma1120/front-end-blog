@@ -1,6 +1,7 @@
 <template>
     <div class="me-page-box">
-        <a href="javascript:void(0)" class="btn-hover"><i class="icon iconfont icon-heart"></i></a>
+        
+         <a href="javascript:void(0)" class="btn-hover"><i class="icon iconfont icon-heart"></i></a>
          <div class="me-top">
              <img class="me-pic" :src="mePicture" alt="me" />
              <h6 class="name">{{info.name}}</h6>

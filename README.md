@@ -54,4 +54,7 @@ git push origin master
 
 #### 》vue的API学习
 
-
+#### 》gh-pages 　设置
+打包后dist 文件夹上传
+然后settings 里面GitHub Pages 设置为 user master　 for gh-pages
+注意打包webpack的设置  config index    build 下 改成 assetsPublicPath: './'
