@@ -60,3 +60,6 @@ git push origin master
 注意打包webpack的设置  config index    build 下 改成 assetsPublicPath: './'
 
 
+
+#### 》未解决问题
+　npm run lint 报错  --fix
