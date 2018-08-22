@@ -1,9 +1,11 @@
 <template>
   <div id="app">
+    <header-group :is-back="isBack"></header-group>
     <div class="main-wrap">
       <router-view/>
     </div>
-    <footer-group></footer-group>
+    <footer-group v-if="!isBack"></footer-group>
+
      <!-- <audio controls loop="loop">
            <source :src="mp3Src" type="audio/mpeg">
             您的浏览器不支持 audio 元素。
@@ -13,27 +15,36 @@
 
 <script>
 import mp3 from '@/assets/audio/list.mp3'
-
+import HeaderGroup from '@/components/header'
 import FooterGroup from '@/components/footer'
+import {mapMutations, mapState} from 'vuex'
 
 export default {
   name: 'App',
-  components:{
-      FooterGroup
+  components: {
+    HeaderGroup,
+    FooterGroup
   },
-  data() {
+  data () {
     return {
       mp3Src: mp3
     }
   },
-  methods:{
-    audioPlay(){
-        let audio= document.querySelector('audio')
-        audio.play()
+  computed: {
+    ...mapState(['header']),
+    isBack () {
+      return this.header.back
+    }
+
+  },
+  methods: {
+    audioPlay () {
+      let audio = document.querySelector('audio')
+      audio.play()
     }
   },
-  mounted(){
-   
+  mounted () {
+
   }
 }
 </script>
@@ -45,10 +56,10 @@ export default {
 }
 .main-wrap{
   position: absolute;
-  top:0;
-  bottom:58px;
-  left:0;
+  top:40px;
   right:0;
+  left:0;
+  bottom:58px;
 }
 audio{
   background: transparent;

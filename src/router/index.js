@@ -4,6 +4,7 @@ import Router from 'vue-router'
 import homePage from '@/view/home'
 import blogPage from '@/view/blog'
 import mePage from '@/view/me'
+import blogDetailPage from '@/view/blog-detail'
 
 Vue.use(Router)
 
@@ -23,6 +24,11 @@ export default new Router({
       path: '/blog',
       name: 'blogPage',
       component: blogPage
+    },
+    {
+      path: '/blogDetail',
+      name: 'blogDetailPage',
+      component: blogDetailPage
     },
     {
       path: '/me',

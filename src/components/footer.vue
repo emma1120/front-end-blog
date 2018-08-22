@@ -9,10 +9,10 @@
                   <i class="footer-icon icon iconfont icon-HTML-fill"></i>
                   <span>博客</span>
                </router-link>
-               <router-link to="/me"  class="footer-item" > 
+               <router-link to="/me"  class="footer-item" >
                     <i class="footer-icon icon iconfont icon-user"></i>
                     <span>me</span>
-               </router-link>             
+               </router-link>
        </div>
    </footer>
 </template>
@@ -59,10 +59,9 @@ export default {
         width:20px;
         height:20px;
         display:block;
-        
+
       }
     }
   }
-  
 
 </style>

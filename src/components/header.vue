@@ -1,6 +1,7 @@
 <template>
   <header>
    <div class="header">
+        <i class="iconfont " :class="isBack? 'icon-arrowleft' : ''" @click="goBack"></i>
         <span>Emma's blog</span>
         <i class="iconfont icon-customerservice  roate"></i>
    </div>
@@ -10,7 +11,17 @@
 <script>
 
 export default {
-
+  props: {
+    isBack: {
+      type: Boolean,
+      default: false
+    }
+  },
+  methods: {
+    goBack () {
+      this.$router.back(-1)
+    }
+  }
 
 }
 
@@ -24,9 +35,15 @@ export default {
   color:#fff;
   padding:10px;
   position:fixed;
+  display:flex;
   top:0;
   left:0;
   right:0;
-  
+
+  span{
+    flex:1;
+    text-align :center;
+  }
+
 }
 </style>

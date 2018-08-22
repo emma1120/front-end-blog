@@ -1,6 +1,7 @@
 <template>
     <div class="me-page-box">
-        
+         <header-group></header-group>
+         <footer-group></footer-group>
          <a href="javascript:void(0)" class="btn-hover"><i class="icon iconfont icon-heart"></i></a>
          <div class="me-top">
              <img class="me-pic" :src="mePicture" alt="me" />
@@ -23,24 +24,30 @@
 
 <script>
 import mePic from '@/assets/me.jpg'
+import HeaderGroup from '@/components/header'
+import FooterGroup from '@/components/footer'
 export default {
-    name: 'homePage',
-    data () {
-        return {
-            mePicture:mePic,
-            info:{
-                name:'Xiuzhi Liao',
-                job:'Front-end Developer',
+  name: 'homePage',
+  components: {
+    HeaderGroup,
+    FooterGroup
+  },
+  data () {
+    return {
+      mePicture: mePic,
+      info: {
+        name: 'Xiuzhi Liao',
+        job: 'Front-end Developer'
 
-            },
-            introList:['Master','Graduation Time: 2016-4','Graduation School: Hangzhou Dianzi University'],
-            link:{
-              zhihu: "https://www.zhihu.com/people/emma-23-18",
-              weiBo: "https://weibo.com/u/1770004882",
-              gitHub: "https://github.com/emma1120"
-            }
-        }
-    },
+      },
+      introList: ['Master', 'Graduation Time: 2016-4', 'Graduation School: Hangzhou Dianzi University'],
+      link: {
+        zhihu: 'https://www.zhihu.com/people/emma-23-18',
+        weiBo: 'https://weibo.com/u/1770004882',
+        gitHub: 'https://github.com/emma1120'
+      }
+    }
+  }
 
 }
 </script >
@@ -74,7 +81,6 @@ export default {
               color:#f90941;
           }
 
-
       }
       /*=========
        top部分
@@ -102,8 +108,7 @@ export default {
                 margin:10px 0;
                 font-size:14px;
             }
-      }  
-      
+      }
 
       .me-bottom{
           width:100%;
@@ -133,9 +138,9 @@ export default {
             text-decoration:none;
             padding:5px 10px;
             color:#666;
-    
+
             i{
-                font-size:30px;   
+                font-size:30px;
             }
 
             &:hover{

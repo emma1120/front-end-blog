@@ -3,11 +3,12 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import store from './store'
 
-//引入maincss
+// 引入maincss
 import '@/assets/css/main.css'
 
-//引入iconfont 
+// 引入iconfont
 import '@/assets/fonts/iconfont.css'
 
 Vue.config.productionTip = false
@@ -16,9 +17,7 @@ Vue.config.productionTip = false
 const app = new Vue({
   el: '#app',
   router,
+  store,
   components: { App },
   template: '<App/>'
 })
-
-console.log(app.$data)
-console.log(app.$slots)
